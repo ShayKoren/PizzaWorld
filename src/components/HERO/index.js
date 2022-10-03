@@ -5,10 +5,10 @@ import Sidebar from '../Sidebar';
 
 
 const Hero = () => {
-    const [isOpen,setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(false)
     const toggle = () => {
-        setIsOpen(!isOpen)
-    }
+        setIsOpen(!isOpen);
+    };
   return (
     <HeroContainer>
     <Navbar toggle={toggle}/>

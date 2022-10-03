@@ -6,13 +6,14 @@ export const SidebarContainer = styled.aside`
 position:fixed;
 z-index:999;
 width:350px;
-heigth:100%;
-background:#fffc500;
+height:100%;
+background:#ffc500;
 display:grid;
 align-items:center;
 top:0;
+right:-350px;
 transition:0.3s ease-in-out;
-right:${({isOpen})=>(isOpen ? '0' : '-1000')};
+ right: ${({ isOpen }) => (isOpen ? '0' : '1000') }; 
 
 @media screen and (max-width:400px){
     width:100%;
@@ -26,9 +27,10 @@ color:#000;
 `
 export const Icon = styled.div`
 position:absolute;
-top:1.5rem;
+top:1.2rem;
 right:1.5rem;
 background:transparent;
+border:transparent;
 font-size:2rem;
 cursor:pointer;
 outline:none;
@@ -46,7 +48,7 @@ text-align:center;
 export const SidebarLink = styled(Link)`
 display:flex;
 align-items:center;
-justify-items:center;
+justify-content:center;
 font-size:1.5rem;
 text-decoration:none;
 list-style:none;
